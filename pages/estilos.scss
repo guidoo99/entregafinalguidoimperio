@@ -1,0 +1,231 @@
+// colores
+$color1: white;
+$color2: red;
+$color3: black;
+
+// gradient
+$gradient1: (to right, #333, yellow);
+
+@mixin contbordes {
+    border: 2px solid $color3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contenedoramarillo {
+    background-color: rgb(139, 16, 0);
+    padding: 20px;
+    width: 100%;
+}
+body{
+    background-color: #333; 
+}
+.buscador {
+    position: relative;
+    right: 0;
+}
+
+#input23 {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    color: $color1;
+    border: 3px;
+    padding: 10px;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: $color3;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+/* Estilos para los textos */
+h1.title {
+    color: $color2; /* Cambiar el color del texto */
+    font-size: 36px; /* Cambiar el tamaño de fuente */
+    font-weight: bold; /* Cambiar el grosor de la fuente */
+    text-decoration: underline; /* Agregar subrayado al texto */
+}
+
+h2.sale {
+    color: #b30303; /* Cambiar el color del texto */
+    font-size: 24px; /* Cambiar el tamaño de fuente */
+}
+
+h3 {
+    color: #140a3f; /* Cambiar el color del texto */
+    font-size: 20px; /* Cambiar el tamaño de fuente */
+    font-weight: bold; /* Cambiar el grosor de la fuente */
+}
+
+p {
+    color: $color3; /* Cambiar el color del texto */
+    font-size: 16px; /* Cambiar el tamaño de fuente */
+    line-height: 1.5; /* Cambiar el espaciado entre líneas */
+}
+
+
+.sub {
+    text-decoration: underline;
+}
+
+.contenedor {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.image {
+    float: left;
+    margin-right: 10px;
+    max-width: 20%;
+    height: auto;
+    width: 600px;
+}
+
+.checkbox-container {
+    margin-bottom: 10px;
+}
+
+.alin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: solid;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: $color3;
+}
+
+.title-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+.image-container {
+    border: 4px solid $color3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid $color3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.volver-btn {
+    border: 2px solid #007bff; /* Color del borde */
+    background-color: #007bff; /* Color de fondo */
+    color: $color1; /* Color del texto */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* Sombreado */
+    transition: all 0.3s ease; /* Transición suave */
+}
+.volver-btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+    background: $gradient1;
+    border-color: #0056b3; /* Color del borde al pasar el cursor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Sombreado al pasar el cursor */
+}
+.custom-container {
+    border: 2px solid $color3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.contenedor-con-bordes {
+    @include contbordes;
+}
+
+.carousel-control-next-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.jumbotron{
+    background-color: $color2;
+    background: $gradient1;
+    color: $color1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jumbotron a.btn:hover{
+    background-color: $color1;
+    color: $color2;
+}
+
+.img-zoom{
+    transition: transform 0.3s;
+}
+
+.img-zoom:hover{
+    transform: scale(1.1);
+}
+.imagen-izquierda{
+    width: 100%;
+    height: auto;
+    background-image: url(../multimedia/imagenquienessomos.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.texto-derecha {
+    float: right;
+    width: 50%;
+}
+
+    .texto-container{
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+
+
+// anidacion
+h3 {
+    color: $color1;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: $color3;
+    font-size: 16px;
+    line-height: 1.5;
+}
+}
+
+
+
+
+
+
