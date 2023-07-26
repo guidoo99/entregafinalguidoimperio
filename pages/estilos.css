@@ -3,6 +3,7 @@
   background-color: rgb(139, 16, 0);
   padding: 20px;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -41,33 +42,35 @@ body {
   color: black;
 }
 
-.nav-link:hover {
-  color: blue;
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  transition: color 0.3s, background-color 0.3s;
+  background-color: #222;
+  font-size: 20px;
 }
 
-/* Estilos para los textos */
 h1.title {
-  color: red; /* Cambiar el color del texto */
-  font-size: 36px; /* Cambiar el tamaño de fuente */
-  font-weight: bold; /* Cambiar el grosor de la fuente */
-  text-decoration: underline; /* Agregar subrayado al texto */
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 h2.sale {
-  color: #b30303; /* Cambiar el color del texto */
-  font-size: 24px; /* Cambiar el tamaño de fuente */
+  color: #b30303;
+  font-size: 24px;
 }
 
 h3 {
-  color: #140a3f; /* Cambiar el color del texto */
-  font-size: 20px; /* Cambiar el tamaño de fuente */
-  font-weight: bold; /* Cambiar el grosor de la fuente */
+  color: #140a3f;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p {
-  color: black; /* Cambiar el color del texto */
-  font-size: 16px; /* Cambiar el tamaño de fuente */
-  line-height: 1.5; /* Cambiar el espaciado entre líneas */
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .sub {
